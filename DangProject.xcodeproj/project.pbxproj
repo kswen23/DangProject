@@ -14,9 +14,11 @@
 		0B1F4A60277046170006B9CF /* DangProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B1F4A5E277046170006B9CF /* DangProject.xcdatamodeld */; };
 		0B1F4A62277046190006B9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1F4A61277046190006B9CF /* Assets.xcassets */; };
 		0B1F4A65277046190006B9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1F4A63277046190006B9CF /* LaunchScreen.storyboard */; };
+		600E64F2B23195641DE59305 /* Pods_DangProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73CB766F0C262008099A411 /* Pods_DangProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030B46F3B3669018541BCDE3 /* Pods-DangProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangProject.release.xcconfig"; path = "Target Support Files/Pods-DangProject/Pods-DangProject.release.xcconfig"; sourceTree = "<group>"; };
 		0B1F4A52277046170006B9CF /* DangProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1F4A55277046170006B9CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B1F4A57277046170006B9CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		0B1F4A61277046190006B9CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B1F4A64277046190006B9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B1F4A66277046190006B9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C3D67B72269C11EA11A6193 /* Pods-DangProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangProject.debug.xcconfig"; path = "Target Support Files/Pods-DangProject/Pods-DangProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D73CB766F0C262008099A411 /* Pods_DangProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600E64F2B23195641DE59305 /* Pods_DangProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07FF335953437A02AD698461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D73CB766F0C262008099A411 /* Pods_DangProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0B1F4A49277046170006B9CF = {
 			isa = PBXGroup;
 			children = (
 				0B1F4A54277046170006B9CF /* DangProject */,
 				0B1F4A53277046170006B9CF /* Products */,
+				45378C53A92D3A4D235A844C /* Pods */,
+				07FF335953437A02AD698461 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = DangProject;
 			sourceTree = "<group>";
 		};
+		45378C53A92D3A4D235A844C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D67B72269C11EA11A6193 /* Pods-DangProject.debug.xcconfig */,
+				030B46F3B3669018541BCDE3 /* Pods-DangProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B1F4A69277046190006B9CF /* Build configuration list for PBXNativeTarget "DangProject" */;
 			buildPhases = (
+				05E4D6613613A6DBFDD1FAC5 /* [CP] Check Pods Manifest.lock */,
 				0B1F4A4E277046170006B9CF /* Sources */,
 				0B1F4A4F277046170006B9CF /* Frameworks */,
 				0B1F4A50277046170006B9CF /* Resources */,
+				A6B8ABF60B1406C660782D08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E4D6613613A6DBFDD1FAC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DangProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B8ABF60B1406C660782D08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DangProject/Pods-DangProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DangProject/Pods-DangProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DangProject/Pods-DangProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B1F4A4E277046170006B9CF /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		0B1F4A6A277046190006B9CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3D67B72269C11EA11A6193 /* Pods-DangProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +386,7 @@
 		};
 		0B1F4A6B277046190006B9CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030B46F3B3669018541BCDE3 /* Pods-DangProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
